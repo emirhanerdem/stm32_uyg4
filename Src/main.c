@@ -499,7 +499,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	//tüm timer kesmeleri buranın içerisine düşer
 	//her 1sn de 1 bu callback fonksiyonu çalışır çünkü prescalar ve arr ayarını ona gre yaptık
 	if(htim->Instance==TIM6){
